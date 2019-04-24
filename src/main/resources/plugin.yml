@@ -1,0 +1,6 @@
+name: EndermiteWars
+version: ${project.version}
+main: me.toaster.endermitewars.EndermiteWars
+api-version: 1.13
+prefix: [EndermiteWars]
+authors: [Toaster, Nowaha]
