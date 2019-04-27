@@ -1,24 +1,24 @@
-package me.toaster.endermitewars;
+package me.toaster.bedwars;
 
 import net.md_5.bungee.api.ChatMessageType;
 import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.entity.Player;
 
 public class ChatManager {
-    EndermiteWars main;
+    BedWars main;
 
-    public ChatManager(EndermiteWars main) {
+    public ChatManager(BedWars main) {
         this.main = main;
     }
 
     public void sendConsoleMessage(String message) {
         // This will log a formatted message to the console.
-        main.getServer().getConsoleSender().sendMessage("§7[§bEndermiteWars§7] §r" + message);
+        main.getServer().getConsoleSender().sendMessage("§7[§bBedWars§7] §r" + message);
     }
 
     public void specialBroadcastMessage(String message) {
         for (Player player : main.getServer().getOnlinePlayers()) {
-            player.sendMessage("§9EndermiteWars§7-§bBroadcast §8» §r" + message);
+            player.sendMessage("§9BedWars§7-§bBroadcast §8» §r" + message);
         }
     }
 
@@ -30,7 +30,7 @@ public class ChatManager {
     }
 
     public void sendMessage(String message, Player player) {
-        player.sendMessage("§9EndermiteWars §8» §r" + message);
+        player.sendMessage("§9BedWars §8» §r" + message);
     }
 
     public void actionBarMessage(String message, Player player) {
